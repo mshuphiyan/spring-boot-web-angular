@@ -31,5 +31,3 @@ deploy:
   api_key:
     secure: "7c8e9d44-1555-4db1-82f6-16352a824c66"
   app: spar-boot-angulardemo
-  on:
-    repo: mshuphiyan/spring-boot-web-angular
