@@ -11,6 +11,9 @@ node_js:
 jdk:
   - oraclejdk8
 
+cache:
+  - bundler
+
 before_install:
   - java -version
   - cd ./src/main/angularUI/
@@ -30,4 +33,6 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: "7c8e9d44-1555-4db1-82f6-16352a824c66"
-  app: mshuphiyan/spring-boot-web-angular
+  app: spar-boot-angulardemo
+  on:
+    repo: mshuphiyan/spring-boot-web-angular
