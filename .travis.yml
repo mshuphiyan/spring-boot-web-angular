@@ -14,11 +14,14 @@ jdk:
 before_install:
   - java -version
   - cd ./src/main/angularUI/
+
+install:
   - npm install
   - npm install -g @angular/cli
 
 before_script:
   - cd ../../..
+
 script:
   - mvn clean verify
   
