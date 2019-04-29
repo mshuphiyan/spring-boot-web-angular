@@ -3,6 +3,9 @@ sudo: required
 services: 
   - docker
 
+jdk:
+  - oraclejdk8
+
 script:
     - docker build -t mshuphiyan/spring-boot-web-angular .
   
@@ -11,3 +14,4 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: "7c8e9d44-1555-4db1-82f6-16352a824c66"
+  app: spar-boot-angulardemo
