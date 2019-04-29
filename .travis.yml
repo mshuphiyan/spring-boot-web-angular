@@ -1,38 +1,10 @@
-sudo: required
-
+language: java
 services: 
   - docker
-
-language: node_js
-
-node_js: 
-  - "11.7.0"
-
 jdk:
   - oraclejdk8
-
-cache:
-  - bundler
-
-before_install:
-  - java -version
-  - cd ./src/main/angularUI/
-
-install:
-  - npm install
-  - npm install -g @angular/cli
-
-before_script:
-  - cd ../../..
-
-script:
-  - mvn clean verify
-  
 deploy:
   provider: heroku
-  skip_cleanup: true
-  api_key:
+  api-key: 
     secure: "7c8e9d44-1555-4db1-82f6-16352a824c66"
   app: spar-boot-angulardemo
-  on:
-    repo: mshuphiyan/spring-boot-web-angular
