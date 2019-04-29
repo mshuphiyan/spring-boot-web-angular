@@ -1,0 +1,9 @@
+.classpath
+.project
+.DS_Store
+.settings/
+target/
+src/main/angularUI/node/
+src/main/angularUI/dist/
+src/main/angularUI/node_modules/
+
