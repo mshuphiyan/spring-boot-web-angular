@@ -29,7 +29,7 @@ deploy:
     secure: "7c8e9d44-1555-4db1-82f6-16352a824c66"
   app: spar-boot-angulardemo
   on:
-    repo: mshuphiyan/SpringBoot-Angular
+    repo: mshuphiyan/spring-boot-web-angular
 
 cache.directories:
   - /var/lib/docker
