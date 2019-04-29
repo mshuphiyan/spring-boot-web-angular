@@ -28,7 +28,6 @@ script:
 deploy:
   provider: heroku
   skip_cleanup: true
-  strategy: git
   api_key:
     secure: "7c8e9d44-1555-4db1-82f6-16352a824c66"
   app: mshuphiyan/spring-boot-web-angular
