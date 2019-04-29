@@ -13,7 +13,6 @@ jdk:
 
 before_install:
   - java -version
-  - chmod +x .travis-deploy-heroku.sh
   - cd ./src/main/angularUI/
   - npm install
   - npm install -g @angular/cli
@@ -31,8 +30,3 @@ deploy:
   app: spar-boot-angulardemo
   on:
     repo: mshuphiyan/spring-boot-web-angular
-
-cache.directories:
-  - /var/lib/docker
-  - $HOME/.m2
-  - web/node_modules
