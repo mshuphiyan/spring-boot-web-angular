@@ -3,6 +3,9 @@ services:
   - docker
 jdk:
   - oraclejdk8
+install:
+  - npm install
+  - npm install -g @angular/cli
 deploy:
   provider: heroku
   api-key: 
